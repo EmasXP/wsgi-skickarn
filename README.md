@@ -59,7 +59,7 @@ werkzeug, but that's it.
 ## TODO
 
 * Write tests. This is the main priority. I want to have tests for everything existing before I start making changes.
-* `wsgi.file_wrapper` is only used for `200 OK` responses. Investigate if it's worth making a wrapper around the file for `416` responses and use `wsgi.file_wrapper`. I think the wrapper is only needed for `416` via `wsgi.file_wrapper` though, to not waste resources in vain.
+* `wsgi.file_wrapper` is only used for `200 OK` responses. Investigate if it's worth making a wrapper around the file for `206` responses and use `wsgi.file_wrapper`. I think the wrapper is only needed for `206` via `wsgi.file_wrapper` though, to not waste resources in vain.
 * I've seen that some implementation of `Content-Range` in different languages have Internet Explorer fixes. I need to investigate this and see if something needs to be implemented.
 * PyPI package. I have no experience with this, though.
 * More things in `setup.py`.
